@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ea7d5bb6.chunk.css",
+    "main.js": "/static/js/main.60d82daa.chunk.js",
+    "main.js.map": "/static/js/main.60d82daa.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
+    "static/js/2.6fba644c.chunk.js": "/static/js/2.6fba644c.chunk.js",
+    "static/js/2.6fba644c.chunk.js.map": "/static/js/2.6fba644c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4cab51eeb4a28be2590e2dceb00fa52d.js": "/precache-manifest.4cab51eeb4a28be2590e2dceb00fa52d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.ea7d5bb6.chunk.css.map": "/static/css/main.ea7d5bb6.chunk.css.map",
+    "static/js/2.6fba644c.chunk.js.LICENSE.txt": "/static/js/2.6fba644c.chunk.js.LICENSE.txt",
+    "static/media/Carson_Schwalm_Resume.pdf": "/static/media/Carson_Schwalm_Resume.94539cea.pdf",
+    "static/media/coffee-mac.jpg": "/static/media/coffee-mac.ae6f3963.jpg",
+    "static/media/me-nana.jpg": "/static/media/me-nana.96a32c4e.jpg",
+    "static/media/note-taking.jpg": "/static/media/note-taking.be1d78f0.jpg",
+    "static/media/react-logo.svg": "/static/media/react-logo.5d5d9eef.svg",
+    "static/media/schwalm-thumb.jpg": "/static/media/schwalm-thumb.62616a8d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2b20a0b.js",
+    "static/js/2.6fba644c.chunk.js",
+    "static/css/main.ea7d5bb6.chunk.css",
+    "static/js/main.60d82daa.chunk.js"
+  ]
+}
