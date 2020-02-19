@@ -8,7 +8,7 @@ export const About = ({ className = 'about' }) => (
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                     <div>
                         <h1>About Me</h1>
-                        <p>I am Carson Schwalm. Web Developer by day, husband and doggo dad by night. I work at DMI in Indianapolis as a Senior Software Engineer consulting for Eli Lilly.  I'm on new projects often, but love the process of solutioning with team members and writing Clean Code.</p>
+                        <p>I am Carson Schwalm. Web Developer by day, husband and doggo dad by night. <br /> Currently working at DMI in Indianapolis as a Senior Software Engineer consulting for Eli Lilly.  <br /><br />I'm on new projects often, but love the process of solutioning with team members and writing <em>Clean Code</em>.</p>
                     </div>
                     <div style={{ height: '100%', display: 'flex', alignItems: 'center' }}>
                         <h2>This is my dog Nana 🍌</h2>
@@ -18,13 +18,13 @@ export const About = ({ className = 'about' }) => (
             </section>
         </div>
         <h1 style={{ textAlign: 'center', width: '100%' }}>Quick Quirks</h1>
-        <section style={{ justifyContent: 'center', flexWrap: 'wrap' }}>
+        <section style={{ justifyContent: 'space-around', flexWrap: 'wrap' }}>
             <div>
                 <h3>Fit in</h3>
                 <ul>
-                    <li>Love my Mac 💻</li>
                     <li>Coffee Addict ☕️</li>
-                    <li>the "Lord of the Rings" are my favorite movies 🌋</li>
+                    <li>Indianapolis Colts fanatic 🏈</li>
+                    <li>Movie Buff 🍿</li>
                 </ul>
             </div>
             <div>
