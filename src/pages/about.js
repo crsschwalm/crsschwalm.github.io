@@ -11,7 +11,7 @@ export const About = ({ className = 'about' }) => (
                         <p>I am Carson Schwalm. Web Developer by day, husband and doggo dad by night. I work at DMI in Indianapolis as a Senior Software Engineer consulting for Eli Lilly.  I'm on new projects often, but love the process of solutioning with team members and writing Clean Code.</p>
                     </div>
                     <div style={{ height: '100%', display: 'flex', alignItems: 'center' }}>
-                        <h2 style={{ color: '#536171' }}>This is my dog Nana 🍌</h2>
+                        <h2>This is my dog Nana 🍌</h2>
                     </div>
                 </div>
                 <img className="bordered-image" src={meNana} alt="Carson and Nana" />
