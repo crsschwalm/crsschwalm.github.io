@@ -1,0 +1,22 @@
+
+.header {
+    min-height: 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header>a {
+    padding: 1rem;
+    text-decoration: none;
+    color: #536171;
+    font-weight: 600;
+}
+
+.header>a.active {
+    border-bottom: 3px solid #536171;
+}

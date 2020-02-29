@@ -1,0 +1,59 @@
+.page {
+    background-color: white;
+}
+
+.hero {
+    min-height: calc(100vh - 50px);
+}
+.hero p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hero.homepage {
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.hero.code {
+    background-image: linear-gradient( -75deg,#23afba 0%,#298dbf 50%,#306bc4 100% );
+}
+.hero.about {
+    background-image: linear-gradient( 75deg,#23afba 0%,#298dbf 50%,#306bc4 100% );
+}
+.hero.connect {
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+.hero>section {
+    color: white;
+    display: flex;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    height: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hero>section>img {
+    display: block;
+    padding: 1rem;
+    margin: 3rem;
+    min-width: 320px;
+    max-width: 50%;
+}
+.hero>section>.bordered-image {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 25px 0px;
+    overflow: visible;
+    border-radius: 6px;
+}
+
+
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 955px;
+    margin: auto;
+    padding: 1rem 1.5rem;
+}

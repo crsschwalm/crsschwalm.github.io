@@ -1,42 +1,33 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
+import '../assets/css/header.css'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const defaultLinks = [{ link: '/', label: "Home" },
+{ link: '/code', label: "My Stats" },
+{ link: '/me', label: "About Me" },
+{ link: '/connect', label: "Connect" }]
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+export const Header = ({ links = defaultLinks }) => {
+    const [pathName, setPathName] = useState();
+    const setPathOnClick = (path) => () => setPathName(path)
+
+    useEffect(() => {
+        setPathName(window.location.pathname)
+    }, []);
+
+    return (
+        <div className='header'>
+            {
+                links.map(({ link, label }, i) => (
+                    <Link
+                        key={i}
+                        to={link}
+                        onClick={setPathOnClick(link)}
+                        className={link === pathName ? 'active' : ''}>
+                        {label}
+                    </Link>
+                ))
+            }
+        </div>
+    )
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
