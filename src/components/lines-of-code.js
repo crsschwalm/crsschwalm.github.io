@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Line } from 'react-chartjs-2';
+import { githubGQL } from '../services/github-client'
 
 const data = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -28,6 +29,28 @@ const data = {
     ]
 };
 
-export const LinesOfCode = () => (
-    <Line data={data} />
-);
+export const LinesOfCode = () => {
+    const [gitData, setGitData] = useState({})
+    useEffect(() => {
+        const fetchGitData = async () => {
+            const res = await githubGQL(`{ 
+                viewer {
+                  repositoriesContributedTo(first: 100, includeUserRepositories: true) {
+                    totalCount
+                    pageInfo {
+                      endCursor
+                      hasNextPage
+                    }
+                    nodes{
+                      name      
+                      }    
+                    }
+                 }
+               }`)
+            setGitData(res.data)
+        }
+
+        fetchGitData();
+    }, [])
+    return <Line data={data} />
+}

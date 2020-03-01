@@ -42,6 +42,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.hero.mobile>section {
+    justify-content: center;
+}
 .hero>section>img {
     display: block;
     padding: 1rem;
@@ -56,6 +59,11 @@
     border-radius: 6px;
 }
 
+@media (max-width: 580px){
+    .hero>section>.bordered-image {
+        margin: 3rem auto;
+    }
+}
 
 
 

@@ -8,6 +8,7 @@
     padding: 1.5rem;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     z-index: 1;
     justify-content: space-evenly;
     background-color: rgb(255, 255, 255);
@@ -19,8 +20,8 @@
     overflow: visible;
     border-radius: 6px;
 }
-.shadow-box>img {
-
+.shadow-box>div {
+    flex-wrap: wrap;
 }
 .app-logo:hover {
     cursor: help;

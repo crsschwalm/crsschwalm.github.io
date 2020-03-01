@@ -1,0 +1,16 @@
+.contributions .options { 
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 100%;
+    color: black;
+}
+
+.options span:hover {
+    cursor: pointer;
+}
+
+.options span.active {
+    font-weight: 700;
+}

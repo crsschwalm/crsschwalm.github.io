@@ -3,11 +3,12 @@ import StackSlide from '../components/stack-slide'
 import resume from '../assets/Carson_Schwalm_Resume.pdf';
 import thumb from '../assets/images/schwalm-thumb.jpg'
 import notes from '../assets/images/note-taking.jpg'
+import { useIsMobile } from "../services";
 
 
 export const Homepage = ({ className, id }) => (
     <div id={id}>
-        <div className={`${className} hero`}>
+        <div className={`${className} hero ${useIsMobile ? 'mobile' : ""}`}>
             <section>
                 <div style={{ flex: 1 }}>
                     <h1>Well hello there,<br />I'm Carson</h1>
