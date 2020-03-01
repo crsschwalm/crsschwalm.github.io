@@ -1,13 +1,12 @@
 import React from "react";
-import reactLogo from '../assets/images/react-logo.svg';
-import vueLogo from '../assets/images/vue-logo.png';
+import StackSlide from '../components/stack-slide'
 import resume from '../assets/Carson_Schwalm_Resume.pdf';
 import thumb from '../assets/images/schwalm-thumb.jpg'
 import notes from '../assets/images/note-taking.jpg'
 
 
-export const Homepage = ({ className = 'homepage' }) => (
-    <div className={className}>
+export const Homepage = ({ className, id }) => (
+    <div id={id}>
         <div className={`${className} hero`}>
             <section>
                 <div style={{ flex: 1 }}>
@@ -19,15 +18,9 @@ export const Homepage = ({ className = 'homepage' }) => (
             </section>
         </div>
 
-        <h1 style={{ textAlign: 'center', width: '100%' }}>My Stack(s)</h1>
+        <h1 style={{ textAlign: 'center', width: '100%' }}>Full Stack Engineer</h1>
 
-        <section>
-            <div className="shadow-box">
-                <img src={reactLogo} className="app-logo" alt="logo" />
-                <img src={vueLogo} className="app-logo" alt="logo" />
-            </div>
-        </section>
-
+        <StackSlide />
         <section>
             <img style={{ maxWidth: '100%', width: '575px', borderRadius: '3rem 0' }} className="image" src={notes} alt="Note taking" />
 

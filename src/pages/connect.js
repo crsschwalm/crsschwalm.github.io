@@ -1,9 +1,8 @@
 import React from 'react';
 import resume from '../assets/Carson_Schwalm_Resume.pdf';
 
-
-export const Connect = ({ className = 'connect' }) => (
-    <div className={className}>
+export const Connect = ({ className, id }) => (
+    <div id={id}>
         <div className={`${className} hero`}>
             <section>
                 <div className="shadow-box" style={{ flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
@@ -19,4 +18,5 @@ export const Connect = ({ className = 'connect' }) => (
                 </div>
             </section>
         </div>
-    </div>)
+    </div>
+)

@@ -10,18 +10,27 @@
     font-weight: 600;
 }
 
-.hero.homepage {
-    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+.hero.home {
+    background-image: linear-gradient(to top, #ffffff 0%, #00c6fb 30%, #005bea 100%); 
+    /* background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
 }
 
 .hero.code {
-    background-image: linear-gradient( -75deg,#23afba 0%,#298dbf 50%,#306bc4 100% );
+    background-image: linear-gradient(to top, #ffffff 0%, rgb(232, 232, 232) 20%, rgb(232, 232, 232) 70%, #ffffff 100%); 
+
+    /* background-image: linear-gradient( -75deg,#23afba 0%,#298dbf 50%, grey 100% ); */
 }
 .hero.about {
-    background-image: linear-gradient( 75deg,#23afba 0%,#298dbf 50%,#306bc4 100% );
+    padding: 3rem 0;
+    background-color: #0140a5;
+    clip-path: polygon(0 4%, 100% 0, 100% 95%, 0 100%);
+    
 }
 .hero.connect {
-    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+
+    /* background-image: linear-gradient(to top, #005bea 0%, #00c6fb 30%, #ffffff 100%);  */
+
+    /* background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
 }
 .hero>section {
     color: white;
