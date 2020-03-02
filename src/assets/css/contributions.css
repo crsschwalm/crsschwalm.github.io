@@ -1,0 +1,41 @@
+.contributions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contributions ul {
+    list-style: none;
+}
+.contributions>h3 {
+    color: black
+}
+.contributions .chart { 
+    position: relative;
+}
+.contributions .chart h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contributions .group { 
+    min-height: 20rem;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 100%;
+    color: black;
+}
+
+.options li:hover {
+    cursor: pointer;
+}
+.options li.inactive h2 {
+    font-weight: 200;
+}
+.options li.active h2 {
+    font-weight: 700;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 import meNana from '../assets/images/me-nana.jpg'
 
-export const About = ({ className = 'about' }) => (
-    <div className={className}>
-        <div className={`${className} hero`}>
+export const About = ({ className, id }) => (
+    <div id={id}>
+        <div className={`${className} hero`}  >
             <section>
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                     <div>

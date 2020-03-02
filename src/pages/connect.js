@@ -1,12 +1,14 @@
 import React from 'react';
 import resume from '../assets/Carson_Schwalm_Resume.pdf';
 
-
-export const Connect = ({ className = 'connect' }) => (
-    <div className={className}>
-        <div className={`${className} hero`}>
-            <section>
-                <div className="shadow-box" style={{ flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+export const Connect = ({ className, id }) => (
+    <div id={id}>
+        <div className={`${className} hero`} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+            <h1>Reach Out 🤝</h1>
+            <section style={{ width: '100%', margin: 0, padding: 0 }}>
+                <div className="shadow-box" style={{
+                    flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+                }}>
                     <div style={{ width: '100%', display: 'flex', justifyContent: 'space-evenly', padding: '2rem 0 1rem 0' }}>
                         <a className='link-button offset' href={resume} target="_blank">Resume</a>
                         <a className='link-button offset' href={'https://www.linkedin.com/in/carsonschwalm/'} target="_blank">LinkedIn</a>
@@ -19,4 +21,5 @@ export const Connect = ({ className = 'connect' }) => (
                 </div>
             </section>
         </div>
-    </div>)
+    </div>
+)
