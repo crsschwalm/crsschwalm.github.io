@@ -9,7 +9,6 @@ import '../assets/css/app.css'
 import '../assets/css/page.css'
 import { Homepage, Connect, Code, About } from '../pages'
 import { Header } from '../components'
-import { useIsMobile } from '../services'
 
 const pages = [
   { link: '/home', label: "Intro", className: "home", id: "home-id", PageComponent: Homepage },
@@ -20,19 +19,17 @@ const pages = [
 
 const renderPages = ({ PageComponent, ...pageProps }) => <PageComponent key={pageProps.id} {...pageProps} />
 
-export default () => {
-  const activePages = useIsMobile() ? [pages[0]] : pages
-
-  return (<Router>
-    <Header pages={activePages} />
+export default () => (
+  <Router>
+    <Header pages={pages} />
     <Switch>
       <Route path="/">
-        {activePages.map(renderPages)}
+        {pages.map(renderPages)}
       </Route>
 
       {/* {
         pages.map(({ PageComponent, link, ...pageProps }) => <Route exact path={link}><PageComponent {...pageProps} /></Route>)
       } */}
     </Switch>
-  </Router>)
-}
+  </Router>
+)
