@@ -15,7 +15,7 @@ const GetProjectsFromAPI = () => {
 
 
     return projects ? (
-        <p style={{ whiteSpace: "nowrap" }}>{projects.join(",  ")} 🚀 </p>
+        <p style={{ whiteSpace: "nowrap" }}>🚀 {projects.join(",  ")} 🚀</p>
     ) : (
             <p style={{ visibility: "hidden" }}>Fetching Project data</p>
         );

@@ -1,17 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import { Radar } from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
 import moment from 'moment'
 import { fetchContributions } from '../services/github-api';
 import '../assets/css/contributions.css'
 
-const style = {
-    backgroundColor: 'rgba(255,99,132,0.2)',
-    borderColor: 'rgba(255,99,132,1)',
-    pointBackgroundColor: 'rgba(255,99,132,1)',
-    pointBorderColor: '#fff',
-    pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgba(255,99,132,1)',
-}
+
+
+const chartData = ({ labels, data }) => ({
+    labels,
+    datasets: [{
+        data,
+        backgroundColor: [
+            '#FF6384',
+            '#36A2EB',
+            '#FFCE56'
+        ],
+        hoverBackgroundColor: [
+            '#FF6384',
+            '#36A2EB',
+            '#FFCE56'
+        ]
+    }]
+});
 
 const now = () => moment().format()
 const then = (timeframe) => moment().subtract(1, timeframe).format()
@@ -32,34 +42,34 @@ export const GitContributions = () => {
             .catch(console.warn)
     }, [timeframe])
 
-    const radarData = {
-        ...style,
-        labels: ['Code Reviews', 'Commits', 'Pull Requests', 'Projects'],
-        datasets: [
-            {
-                label: `My ${timeframe.label} in review`,
-                data: [
-                    gitData.reviews,
-                    gitData.commits,
-                    gitData.pullRequests,
-                    gitData.projectsCommittedTo
-                ]
-            }
+    const data = chartData({
+        labels: ['Code Reviews', 'Commits', 'Pull Requests'],
+        data: [
+            gitData.reviews,
+            gitData.commits,
+            gitData.pullRequests,
         ]
-    }
+    })
 
     return (
         <div className="contributions">
-            <Radar data={radarData} />
-            <div className="options">
-                {Object.entries(timeOptions).map(([, { id, label }]) =>
-                    <span
-                        key={id}
-                        className={timeframe.id === id ? 'active' : 'inactive'}
-                        onClick={() => setTimeframe(timeOptions[id])}>
-                        {label}
-                    </span>)
-                }
+            <h3>My {timeframe.label} in review</h3>
+
+            <div className="group">
+                <ul className="options">
+                    {Object.entries(timeOptions).map(([, { id, label }]) =>
+                        <li
+                            key={id}
+                            className={timeframe.id === id ? 'active' : 'inactive'}
+                            onClick={() => setTimeframe(timeOptions[id])}>
+                            <h2>{label}</h2>
+                        </li>)
+                    }
+                </ul>
+                <div className="chart">
+                    <h4>{gitData.projectsCommittedTo} projects</h4>
+                    <Doughnut data={data} height={300} />
+                </div>
             </div>
         </div >)
 }

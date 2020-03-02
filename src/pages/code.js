@@ -19,10 +19,10 @@ export const Code = ({ className, id }) => {
         <div id={id}>
             <div className={`${className} hero`}>
                 <h1 style={{ textAlign: 'center', width: '100%', padding: '2rem 0' }}>I Build Things 👨‍💻</h1>
-                <section>
-                    <GitContributions />
-                </section>
-                <h2 style={{ textAlign: 'center', width: '100%', padding: '2rem 0' }}>Contributed to {projectCount} projects this year</h2>
+
+                <GitContributions />
+
+                <h2 style={{ textAlign: 'center', width: '100%', padding: '2rem 0' }}>{projectCount} Projects in the last 12 months!</h2>
                 <ProjectTicker />
                 <section style={{ paddingTop: '2rem', display: 'flex', justifyContent: 'space-around', alignItems: 'center', color: 'black' }}>
                     <div>
