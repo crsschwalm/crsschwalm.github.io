@@ -11,10 +11,10 @@ import { Homepage, Connect, Code, About } from '../pages'
 import { Header } from '../components'
 
 const pages = [
-  { link: '/home', label: "Intro", className: "home", id: "home-id", PageComponent: Homepage },
-  { link: '/code', label: "My Work", className: "code", id: "code-id", PageComponent: Code },
-  { link: '/me', label: "About Me", className: "about", id: "about-id", PageComponent: About },
-  { link: '/connect', label: "Connect", className: "connect", id: "connect-id", PageComponent: Connect }
+  { link: '/home', label: "Intro", className: "home", id: "home-id", PageComponent: Homepage, icon: '🏠' },
+  { link: '/code', label: "My Work", className: "code", id: "code-id", PageComponent: Code, icon: '👨‍💻' },
+  { link: '/me', label: "About Me", className: "about", id: "about-id", PageComponent: About, icon: '🙋‍♂️' },
+  { link: '/connect', label: "Connect", className: "connect", id: "connect-id", PageComponent: Connect, icon: '🤝' }
 ]
 
 const renderPages = ({ PageComponent, ...pageProps }) => <PageComponent key={pageProps.id} {...pageProps} />
