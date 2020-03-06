@@ -32,6 +32,9 @@ export const Code = ({ className, id }) => {
                             <li>Node on AWS Lambda</li>
                             <li>Github GraphQL API</li>
                             <li>Iterative releases (always a Work In Progress)</li>
+                            <li><a href="https://github.com/crsschwalm/crsschwalm.github.io">Check out the source code</a></li>
+                            <ul><li><a href="https://github.com/crsschwalm/portfolio-api">and the API</a></li></ul>
+                            <li><a href="https://codepen.io/crsschwalm/pen/eYNGZra">Code Pen</a></li>
                         </ul>
                     </div>
                     <img style={{
