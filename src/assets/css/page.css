@@ -16,42 +16,11 @@
     /* background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
 }
 
-#code-id {
-    background-image: url('../images/coffee-mac.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 2rem 0 5rem 0;
-}
-.code ul li a {
-    color: lightblue;
-}
-.code ul li a:visited {
-    color: lightgrey;
-    text-decoration: none;
-}
-
-.hero.code {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 1rem;
-    max-width: 1024px;
-    min-width: 90%;
-    margin: auto;
-    justify-content: center;
-    color: white;
-    /* background-image: linear-gradient(to top, #ffffff 0%, rgb(232, 232, 232) 20%, rgb(232, 232, 232) 70%, #ffffff 100%);  */
-    /* background-image: linear-gradient( -75deg,#23afba 0%,#298dbf 50%, grey 100% ); */
-}
-
-
 @media (max-width: 580px){
     .hero.code {
         border-radius: 0;
     }
 }
-
-
 
 .hero.about {
     margin-top: -4rem;
@@ -60,12 +29,7 @@
     clip-path: polygon(0 4%, 100% 0, 100% 95%, 0 100%);
     
 }
-.hero.connect {
 
-    /* background-image: linear-gradient(to top, #005bea 0%, #00c6fb 30%, #ffffff 100%);  */
-
-    /* background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
-}
 .connect .shadow-box a>img {
     width: 4rem;
 }
@@ -103,12 +67,16 @@
     }
 }
 
-
-
 section {
     display: flex;
     flex-wrap: wrap;
     max-width: 955px;
     margin: auto;
     padding: 1rem 1.5rem;
+}
+
+.about.hero .text-area { 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }

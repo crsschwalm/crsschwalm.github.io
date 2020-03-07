@@ -28,9 +28,34 @@
 }
 
 .app-logo {
+    padding: .5rem;
     height: 50px;
 }
 
 a:hover {
     cursor: pointer;
+}
+
+.list-section {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+.list-section h4{
+    margin-bottom: 0;
+}
+
+.list-section ul{
+    margin-top: 0;
+}
+
+.list-section>div {
+    width: 50%;
+}
+@media (max-width: 580px){
+    .list-section>div {
+        width: 85%;
+    }
 }

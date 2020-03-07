@@ -5,7 +5,7 @@ export const About = ({ className, id }) => (
     <div id={id}>
         <div className={`${className} hero`}  >
             <section>
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+                <div className="text-area">
                     <div>
                         <h1>About Me</h1>
                         <p>I am Carson Schwalm. Web Developer by day, husband and doggo dad by night. <br /> Currently working at DMI in Indianapolis as a Senior Software Engineer consulting for Eli Lilly.  <br /><br />I'm on new projects often, but love the process of solutioning with team members and writing <em>Clean Code</em>.</p>
@@ -18,7 +18,7 @@ export const About = ({ className, id }) => (
             </section>
         </div>
         <h1 style={{ textAlign: 'center', width: '100%' }}>Quick Quirks</h1>
-        <section style={{ justifyContent: 'space-around', flexWrap: 'wrap' }}>
+        <section className="list-section">
             <div>
                 <h3>Fit in</h3>
                 <ul>

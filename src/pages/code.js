@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import moment from 'moment'
 import { GitContributions } from '../components'
-import coffeeMac from '../assets/images/coffee-mac.jpg'
 import ProjectTicker from '../components/project-ticker';
 import { fetchContributions } from '../services';
+import '../assets/css/code.css'
 
 const now = () => moment().format()
 const aYearAgo = () => moment().subtract(1, 'years').format()
@@ -18,16 +18,17 @@ export const Code = ({ className, id }) => {
     return (
         <div id={id}>
             <div className={`${className} hero`}>
-                <h1 style={{ textAlign: 'center', width: '100%', padding: '2rem 0' }}>I Build Things 👨‍💻</h1>
+                <span className="section-icon">👨‍💻</span>
+                <h1>I Build Things</h1>
 
                 <GitContributions />
 
-                <h2 style={{ textAlign: 'center', width: '100%', padding: '2rem 0' }}>{projectCount} Projects in the last 12 months!</h2>
+                <h2>{projectCount} Projects in the last 12 months!</h2>
                 <ProjectTicker />
-                <section style={{ paddingTop: '2rem', display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+                <section className="list-section">
                     <div>
-                        <h4 style={{ marginBottom: 0 }}>This Site</h4>
-                        <ul style={{ marginTop: 0 }}>
+                        <h4>This Site</h4>
+                        <ul>
                             <li>React on Github Pages</li>
                             <li>Node on AWS Lambda</li>
                             <li>Github GraphQL API</li>
@@ -37,11 +38,24 @@ export const Code = ({ className, id }) => {
                             <li><a href="https://codepen.io/crsschwalm/pen/eYNGZra">Code Pen</a></li>
                         </ul>
                     </div>
-                    <img style={{
-                        borderRadius: '0 3rem',
-                        padding: 0,
-                        margin: 0
-                    }} className="image" src={coffeeMac} alt="Coffee + Mac" />
+                    <div>
+                        <h4>What I want more of</h4>
+                        <ul>
+                            <li>AWS... there's so many options</li>
+                            <ul>
+                                <li>Working through Udemy training - Associate Dev Cert 🏅</li>
+                            </ul>
+                            <li>Mobile Development</li>
+                            <ul>
+                                <li>Some React Native experience (operational prototype app)</li>
+                                <li>Would love to work on production apps 📱</li>
+                            </ul>
+                            <li>Public facing web apps</li>
+                            <ul>
+                                <li>Theres something that feels great about working on projects that you can show off to friends and family</li>
+                            </ul>
+                        </ul>
+                    </div>
                 </section>
 
             </div>
