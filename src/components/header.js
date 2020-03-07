@@ -4,7 +4,6 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import '../assets/css/header.css'
 
-const topOffset = 50;
 export const Header = ({ pages }) => {
     return (
         <div className='header'>
@@ -34,12 +33,12 @@ const OsxDock = ({ options }) => {
     return (
         <div className="dock-container" onMouseLeave={resetSiblings}>
             <div className="dock">
-                <Scrollspy offset={topOffset * -1} items={options.map(({ id }) => id)} currentClassName="active-icon" componentTag={'div'} className="icon-group">
+                <Scrollspy items={options.map(({ id }) => id)} currentClassName="active-icon" componentTag={'div'} className="icon-group">
                     {options.map(({ label, icon, id }, i) => (
                         <div key={id} className="item" onMouseEnter={handleHover(i)}>
                             <span>{label}</span>
                             <AnchorLink
-                                offset={topOffset}
+                                offset={id === 'about-id' ? -65 : 0}
                                 href={`#${id}`} title={label}>
                                 <div className={siblingClass(id)}>
                                     {icon}

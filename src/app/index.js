@@ -4,6 +4,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import ReactTooltip from 'react-tooltip'
 
 import '../assets/css/app.css'
 import '../assets/css/page.css'
@@ -31,5 +32,6 @@ export default () => (
         pages.map(({ PageComponent, link, ...pageProps }) => <Route exact path={link}><PageComponent {...pageProps} /></Route>)
       } */}
     </Switch>
+    <ReactTooltip />
   </Router>
 )

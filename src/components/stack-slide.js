@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactTooltip from 'react-tooltip'
 
 import github from '../assets/images/github.png';
 import npm from '../assets/images/npm.png';
@@ -29,6 +28,5 @@ export default () => (
             {/* <img data-tip="css3" src={css3} className="app-logo" alt="css3" /> */}
             <img data-tip="heroku" src={heroku} className="app-logo" alt="heroku" />
         </div>
-        <ReactTooltip />
     </section>
 )

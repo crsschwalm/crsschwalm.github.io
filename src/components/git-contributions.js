@@ -68,7 +68,7 @@ export const GitContributions = () => {
                 </ul>
                 <div className="chart">
                     <h4>{gitData.projectsCommittedTo} projects</h4>
-                    <Doughnut data={data} height={300} />
+                    <Doughnut data={data} height={300} options={{ legend: { labels: { fontColor: "#ffffff" } } }} />
                 </div>
             </div>
         </div >)

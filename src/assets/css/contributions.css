@@ -7,9 +7,6 @@
 .contributions ul {
     list-style: none;
 }
-.contributions>h3 {
-    color: black
-}
 .contributions .chart { 
     position: relative;
 }
@@ -27,7 +24,6 @@
     align-items: center;
     
     width: 100%;
-    color: black;
 }
 
 .options li:hover {
