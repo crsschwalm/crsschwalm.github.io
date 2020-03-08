@@ -18,7 +18,7 @@ export const Code = ({ className, id }) => {
     return (
         <div id={id}>
             <div className={`${className} hero`}>
-                <span className="section-icon">👨‍💻</span>
+                <span data-tip data-for='easterEgg' className="section-icon">👨‍💻</span>
                 <h1>I Build Things</h1>
 
                 <GitContributions />

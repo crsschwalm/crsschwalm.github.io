@@ -51,3 +51,11 @@ a {
     }
   }
 }
+
+#easterEgg.opaque.show {
+  background-color: transparent;
+  opacity: .75;
+  &:after {
+    display: none;
+  }
+}

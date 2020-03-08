@@ -32,6 +32,9 @@
         }
     }
     .section-icon {
+        &:hover {
+            cursor: grab;
+        }
         position: absolute;
         top: -1.5rem;
         padding: 1rem 1.3rem;

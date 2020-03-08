@@ -33,5 +33,8 @@ export default () => (
       } */}
     </Switch>
     <ReactTooltip />
+    <ReactTooltip id='easterEgg' effect='solid' place="bottom" className="opaque">
+      <span style={{ fontSize: "100px" }}>🐣</span>
+    </ReactTooltip>
   </Router>
 )
