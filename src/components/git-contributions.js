@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import moment from 'moment'
 import { fetchContributions } from '../services/github-api';
-import '../assets/css/contributions.css'
+import '../assets/scss/contributions.scss'
 
 
 

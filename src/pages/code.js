@@ -3,7 +3,7 @@ import moment from 'moment'
 import { GitContributions } from '../components'
 import ProjectTicker from '../components/project-ticker';
 import { fetchContributions } from '../services';
-import '../assets/css/code.css'
+import '../assets/scss/code.scss'
 
 const now = () => moment().format()
 const aYearAgo = () => moment().subtract(1, 'years').format()

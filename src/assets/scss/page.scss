@@ -1,0 +1,92 @@
+.page {
+    background-color: white;
+}
+
+.hero {
+    min-height: calc(100vh - 50px);
+    p {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    >section {
+        color: white;
+        display: flex;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        font-weight: 400;
+        height: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        >img {
+            display: block;
+            padding: 1rem;
+            margin: 3rem;
+            min-width: 320px;
+            max-width: 50%;
+        }
+    }
+
+    &.mobile>section {
+        justify-content: center;
+    }
+    &.home {
+        background-attachment: fixed;
+        background-image: linear-gradient(to top, #ffffff 0%, #00c6fb 30%, #005bea 100%); 
+        /* background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
+        >section {
+            align-items: center;
+            h1 {
+                margin-top: 0;
+                @media (max-width: 686px){
+                    margin-top: 2rem
+                }
+            }
+        }
+    }
+    &.code {
+        @media (max-width: 580px){
+            border-radius: 0;
+        }
+    }
+    &.about {
+        margin-top: -4rem;
+        padding: 3rem 0;
+        background-color: #0140a5;
+        clip-path: polygon(0 4%, 100% 0, 100% 95%, 0 100%);
+    }
+
+    .bordered-image {
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 25px 0px;
+        overflow: visible;
+        border-radius: 6px;
+        @media (max-width: 580px){
+            margin: 3rem auto;
+        }
+    }
+    &.about {
+        .text-area { 
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &.connect {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .shadow-box a>img {
+            width: 4rem;
+        }
+    }
+
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 955px;
+    margin: auto;
+    padding: 1rem 1.5rem;
+}

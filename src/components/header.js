@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Scrollspy from 'react-scrollspy'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-import '../assets/css/header.css'
+import '../assets/scss/header.scss'
 
 export const Header = ({ pages }) => {
     return (
@@ -10,6 +10,19 @@ export const Header = ({ pages }) => {
             <OsxDock options={pages} />
         </div>
     )
+}
+
+const getOffset = (id) => {
+    switch (id) {
+        case "about-id":
+            return "-70";
+        case "code-id":
+            return "-2"
+        case "connect-id":
+        case "home-id":
+        default:
+            return "0";
+    }
 }
 
 const OsxDock = ({ options }) => {
@@ -38,7 +51,7 @@ const OsxDock = ({ options }) => {
                         <div key={id} className="item" onMouseEnter={handleHover(i)}>
                             <span>{label}</span>
                             <AnchorLink
-                                offset={id === 'about-id' ? -65 : 0}
+                                offset={getOffset(id)}
                                 href={`#${id}`} title={label}>
                                 <div className={siblingClass(id)}>
                                     {icon}

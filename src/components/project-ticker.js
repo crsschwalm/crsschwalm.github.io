@@ -2,6 +2,16 @@ import React, { useState, useEffect } from 'react';
 import Ticker from 'react-ticker'
 import { fetchProjects } from '../services/github-api';
 
+const seperators = ["👨‍💻", "☕️", "💻", "🦔", "🚢", "🚀"]
+
+const ProjectItem = ({ index, projectName }) => (
+    <span key={index}>
+        {projectName}
+        <span role="img" style={{ padding: "0 1rem" }}>
+            {seperators[index % seperators.length]}
+        </span>
+    </span>)
+
 const GetProjectsFromAPI = () => {
     const [projects, setProjects] = useState([]);
     useEffect(() => {
@@ -15,7 +25,7 @@ const GetProjectsFromAPI = () => {
 
 
     return projects ? (
-        <p style={{ whiteSpace: "nowrap" }}>🚀 {projects.join(",  ")} 🚀</p>
+        <p style={{ whiteSpace: "nowrap" }}>🚀 {projects.map((p, i) => (<ProjectItem key={i} projectName={p} index={i} />))}</p>
     ) : (
             <p style={{ visibility: "hidden" }}>Fetching Project data</p>
         );

@@ -9,7 +9,7 @@ import phone from "../assets/images/sm_phone.png";
 
 export const Connect = ({ className, id }) => (
     <div id={id}>
-        <div className={`${className} hero`} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+        <div className={`${className} hero`}>
             <h1>Reach Out 🤝</h1>
             <section style={{ width: '100%', margin: 0, padding: 0 }}>
                 <div className="shadow-box" style={{

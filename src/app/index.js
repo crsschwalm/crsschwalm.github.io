@@ -6,8 +6,8 @@ import {
 } from "react-router-dom";
 import ReactTooltip from 'react-tooltip'
 
-import '../assets/css/app.css'
-import '../assets/css/page.css'
+import '../assets/scss/app.scss'
+import '../assets/scss/page.scss'
 import { Homepage, Connect, Code, About } from '../pages'
 import { Header } from '../components'
 
