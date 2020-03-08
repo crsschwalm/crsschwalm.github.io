@@ -37,7 +37,7 @@ export default () => (
             <img data-type="info" data-effect="solid" data-tip="Redis - Message queues/Cache" src={redis} className="app-logo" alt="Redis - message queues/Cache" />
             <img data-type="info" data-effect="solid" data-tip="ElasticSearch - Search Engines" src={elastic} className="app-logo" alt="elastic" />
             <img data-type="info" data-effect="solid" data-tip="Postgres - SQL Databases" src={postgres} className="app-logo" alt="Postgres" />
-            <img data-type="info" data-effect="solid" data-tip="GraphQL - Graph DB API" src={graphql} className="app-logo" alt="GraphQL" />
+            <img data-type="info" data-effect="solid" data-tip="GraphQL - API for Querying Databases" src={graphql} className="app-logo" alt="GraphQL" />
 
             <img data-type="info" data-effect="solid" data-tip="NPM - Utilize and Create Open Source" src={npm} className="app-logo" alt="npm" />
             <img data-type="info" data-effect="solid" data-tip="GitHub - Source Code Repositories" src={github} className="app-logo" alt="github" />
