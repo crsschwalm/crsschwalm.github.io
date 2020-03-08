@@ -98,3 +98,16 @@ section {
     margin: auto;
     padding: 1rem 1.5rem;
 }
+
+#home-id {
+    section {
+        justify-content: center;
+        .image-container {
+            min-width: 320px;
+            max-width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

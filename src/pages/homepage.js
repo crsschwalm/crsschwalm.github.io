@@ -23,8 +23,9 @@ export const Homepage = ({ className, id }) => (
 
         <StackSlide />
         <section>
-            <img style={{ maxWidth: '100%', width: '575px', borderRadius: '3rem 0' }} className="image" src={notes} alt="Note taking" />
-
+            <div className="image-container">
+                <img style={{ maxWidth: '100%', width: '575px', borderRadius: '3rem 0' }} className="image" src={notes} alt="Note taking" />
+            </div>
             <div style={{ flex: 1, paddingLeft: '3rem' }}>
                 <h2>What are you looking for?</h2>
                 <p>There's so many web frameworks and tools.  I really like the tools I've used, but am even more intrigued by introducting more to that list!</p>
