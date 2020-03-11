@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
 import ReactTooltip from 'react-tooltip'
+import ReactGA from 'react-ga';
 
 import '../assets/scss/app.scss'
 import '../assets/scss/page.scss'
@@ -20,21 +21,29 @@ const pages = [
 
 const renderPages = ({ PageComponent, ...pageProps }) => <PageComponent key={pageProps.id} {...pageProps} />
 
-export default () => (
-  <Router>
-    <Header pages={pages} />
-    <Switch>
-      <Route path="/">
-        {pages.map(renderPages)}
-      </Route>
+export default () => {
+  useEffect(() => {
+    ReactGA.initialize('UA-160277350-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [])
 
-      {/* {
+
+  return (
+    <Router>
+      <Header pages={pages} />
+      <Switch>
+        <Route path="/">
+          {pages.map(renderPages)}
+        </Route>
+
+        {/* {
         pages.map(({ PageComponent, link, ...pageProps }) => <Route exact path={link}><PageComponent {...pageProps} /></Route>)
       } */}
-    </Switch>
-    <ReactTooltip />
-    <ReactTooltip id='easterEgg' effect='solid' place="bottom" className="opaque">
-      <span style={{ fontSize: "100px" }}>🐣</span>
-    </ReactTooltip>
-  </Router>
-)
+      </Switch>
+      <ReactTooltip />
+      <ReactTooltip id='easterEgg' effect='solid' place="bottom" className="opaque">
+        <span style={{ fontSize: "100px" }}>🐣</span>
+      </ReactTooltip>
+    </Router>
+  )
+}
