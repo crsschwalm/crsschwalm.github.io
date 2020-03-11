@@ -25,14 +25,26 @@ export const About = ({ className, id }) => (
                     <li>Coffee Addict ☕️</li>
                     <li>Indianapolis Colts fanatic 🏈</li>
                     <li>Movie Buff 🍿</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Break out</h3>
-                <ul>
                     <li>Work out every day and enjoy hikes 💪</li>
                     <li>World Traveler 🌎</li>
                     <li>Love Cooking 🥘</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Things I've enjoyed</h3>
+                <ul>
+                    <li>Public facing <strong>Web Apps</strong></li>
+                    <ul>
+                        <li>Theres something that feels great about working on projects that you can show off to friends and family</li>
+                    </ul>
+                    <li>Mobile Development - <strong>React Native</strong></li>
+                    <ul>
+                        <li>Built operational prototype application for client</li>
+                    </ul>
+                    <li><strong>AWS</strong>... there's so many options</li>
+                    <ul>
+                        <li>Working through Udemy training - Associate Dev Cert 🏅</li>
+                    </ul>
                 </ul>
             </div>
         </section>
