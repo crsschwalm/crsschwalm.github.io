@@ -1,17 +1,24 @@
-.header a {
+.header {
+
+  transition: all 200ms 'ease-in';
+
+  a {
     text-decoration: none;
+
+    &:hover {
+      cursor: default;
+    }
   }
- header a:hover {
-    cursor: default;
-  }
-  .header .dock-container {
+
+  .dock-container {
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
     z-index: 100;
   }
-  .header .dock {
+
+  .dock {
     width: auto;
     display: inline-block;
     justify-content: center;
@@ -25,40 +32,77 @@
     border-style: solid;
     padding: 8px;
     height: 50px;
+
+    .icon-group {
+      display: flex;
+      justify-content: center;
+    }
+
+    .item {
+      display: inline;
+      padding: 1rem;
+
+      &:hover {
+        height: 3rem;
+
+        span {
+          visibility: visible;
+          opacity: 1;
+
+          &:after {
+            visibility: visible;
+            opacity: 1;
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 0;
+            height: 0;
+            border-top: solid 8px rgba(50, 50, 50, 0.85);
+            border-left: solid 8px transparent;
+            border-right: solid 8px transparent;
+          }
+        }
+
+        .icon {
+          font-size: 60px;
+        }
+      }
+
+      span {
+        color: white;
+        position: absolute;
+        top: -75%;
+        transition: display 1s;
+        padding: 12px;
+        border-radius: 3px;
+        background-color: rgba(50, 50, 50, 0.85);
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.1s, opacity 0.1s;
+
+        &:after {
+          visibility: hidden;
+          opacity: 0;
+          transition: visibility 0.1s, opacity 0.1s;
+        }
+      }
+
+      strong {
+        display: none;
+
+        &:hover {
+          cursor: default;
+        }
+      }
+    }
   }
-  .header .dock .icon-group {
-    display: flex;
-    justify-content: center;
-  }
-  .header .dock .item {
-    display: inline;
-    padding: 1rem;
-  }
-  .header .dock .item span {
-    color: white;
-    position: absolute;
-    top: -75%;
-    transition: display 1s;
-    padding: 12px;
-    border-radius: 3px;
-    background-color: rgba(50, 50, 50, 0.85);
-    transform: translate(-50%, -50%);
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.1s, opacity 0.1s;
-  }
-  .header .dock .item span:after {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.1s, opacity 0.1s;
-  }
-  .header .dock .item strong {
-    display: none;
-  }
-  .header .dock .item strong:hover {
-    cursor: default;
-  }
-  .header .dock .item.active-icon strong {
+
+
+  .dock .item.active-icon strong {
     color: rgba(255, 255, 255, 0.75);
     font-size: 28px;
     display: inline-block;
@@ -67,36 +111,14 @@
     text-align: center;
     transform: translate(-50%, -50%);
   }
-  .header .dock .item .icon {
+
+  .dock .item .icon {
     font-size: 40px;
     transition: font-size .05s;
   }
-  .header .dock .item .icon.active-sibling {
+
+  .dock .item .icon.active-sibling {
     font-size: 45px;
   }
-  .header .dock .item:hover {
-    height: 3rem;
-  }
-  .header .dock .item:hover span {
-    visibility: visible;
-    opacity: 1;
-  }
-  .header .dock .item:hover span:after {
-    visibility: visible;
-    opacity: 1;
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 0;
-    height: 0;
-    border-top: solid 8px rgba(50, 50, 50, 0.85);
-    border-left: solid 8px transparent;
-    border-right: solid 8px transparent;
-  }
-  .header .dock .item:hover .icon {
-    font-size: 60px;
-  }
-  
+
+}
