@@ -1,6 +1,6 @@
 .header {
 
-  transition: all 200ms 'ease-in';
+  transition: all 200ms ease-in;
 
   a {
     text-decoration: none;
@@ -16,6 +16,18 @@
     width: 100%;
     text-align: center;
     z-index: 100;
+
+    &.hide {
+      visibility: hidden;
+      transition: all 200ms ease-out;
+      transform: translate(0, 100%);
+    }
+
+    &.show {
+      visibility: visible;
+      transition: all 200ms ease-in;
+      transform: none;
+    }
   }
 
   .dock {

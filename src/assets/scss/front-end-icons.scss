@@ -1,0 +1,315 @@
+.animated-icons {
+    margin: 0;
+    padding: 0 2rem;
+    line-height: 1;
+    background-color: rgb(56, 56, 70);
+    color: #ffffff;
+    text-align: center;
+    padding: 3rem 0;
+
+    h2 {
+        margin: 0;
+
+    }
+
+    .st0 {
+        fill: #61DAFB;
+    }
+
+    ul.list-services {
+        margin: 0;
+        list-style: none;
+        padding-left: 0;
+    }
+
+
+
+    .list-services {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .list-services li {
+        padding: 0 2em;
+    }
+
+    .list-services figcaption {
+        margin: 1em 0 2em 0;
+    }
+
+    figure.hide {
+        visibility: hidden;
+    }
+
+    figure.show {
+        width: 5em;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        justify-items: center;
+
+
+        svg {
+            width: 100%;
+            height: 200px;
+            transform: scale(1.4);
+
+            &.react {
+                transform: scale(2.5);
+            }
+        }
+
+
+        /* ANGULAR */
+
+        .bg {
+            animation: bg 2s 0.5s forwards;
+            fill: #e23237;
+            fill-opacity: 0;
+            stroke: rgb(255, 255, 255);
+            stroke-width: 8px;
+            stroke-opacity: 0;
+            stroke-dasharray: 1000px;
+        }
+
+        @keyframes bg {
+            0% {
+                stroke-opacity: 1;
+                stroke-dashoffset: 1000px;
+            }
+
+            50% {
+                fill: #e23237;
+                fill-opacity: 0;
+            }
+
+            100% {
+                stroke-width: 0;
+                fill-opacity: 1;
+            }
+        }
+
+        .bg-2 {
+            animation: bg-2 2s 2.5s forwards;
+            opacity: 0;
+        }
+
+        @keyframes bg-2 {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .a {
+            animation: a 1s 2s forwards;
+            transform-origin: center center;
+            opacity: 0;
+        }
+
+        @keyframes a {
+            from {
+                transform: rotate(540deg) scale(0.5);
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* REACT */
+
+        circle {
+            animation: circle 0.8s forwards;
+            transform-origin: center center;
+            opacity: 0;
+            box-shadow: 0px 0px 30px 5px white;
+        }
+
+        @keyframes circle {
+            0% {
+                transform: scale(0.5);
+                box-shadow: 0px 0px 30px 5px white;
+            }
+
+            15% {
+                opacity: 1;
+                transform: scale(2);
+                box-shadow: 0px 0px 30px 5px white;
+            }
+
+            25% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: translateY(20em);
+            }
+
+            58% {
+                transform: translateY(22em) scaleY(0.4) scaleX(1.6);
+            }
+
+            60% {
+                transform: translateY(20em);
+                fill: white;
+            }
+
+            100% {
+                transform: translate(0);
+                opacity: 1;
+            }
+        }
+
+        .elipse {
+            animation: elipse 2.45s .7s forwards;
+            transform-origin: center center;
+            opacity: 0;
+        }
+
+        @keyframes elipse {
+            from {
+                transform: scale(0.5) rotate(2000deg);
+                fill: white;
+            }
+
+            to {
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        .elipse3 {
+            animation: elipse3 2.3s .7s forwards;
+            transform-origin: center center;
+            opacity: 0;
+        }
+
+        @keyframes elipse3 {
+            from {
+                transform: scale(0.3) rotate(-900deg);
+                fill: white;
+            }
+
+            to {
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        .elipse2 {
+            animation: elipse2 2s .7s forwards;
+            transform-origin: center center;
+            opacity: 0;
+        }
+
+        @keyframes elipse2 {
+            from {
+                transform: scale(0) rotate(1440deg);
+                fill: white;
+            }
+
+            to {
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        /* VUEJS */
+
+        .v-enter {
+            animation: v-enter 6s forwards;
+            stroke: white;
+            stroke-width: 5px;
+            stroke-opacity: 0;
+            fill-opacity: 0;
+            stroke-dasharray: 900px;
+        }
+
+        @keyframes v-enter {
+            0% {
+                stroke-dashoffset: 900px;
+                stroke-width: 5px;
+            }
+
+            60% {
+                opacity: 1;
+                stroke-opacity: 1;
+                stroke-dasharray: 20px 20px;
+            }
+
+            100% {
+                stroke-width: 0;
+                stroke-dasharray: 20px 20px;
+            }
+        }
+
+        .v-1 {
+            animation: v-1 4s 2.5s forwards;
+            opacity: 0;
+            stroke-dasharray: 1200px;
+            stroke: rgb(108, 255, 174);
+            fill-opacity: 0;
+        }
+
+        @keyframes v-1 {
+            0% {
+                transform: translateY(-5em);
+                stroke-width: 8px;
+                stroke-dashoffset: 1100px;
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            70% {
+                fill-opacity: 0;
+                transform: translateY(0em);
+            }
+
+            100% {
+                opacity: 1;
+                fill-opacity: 1;
+                stroke-width: 0px;
+            }
+        }
+
+        .v-2 {
+            animation: v-2 2.5s 3.5s forwards;
+            opacity: 0;
+            stroke-dasharray: 700px;
+            stroke: rgb(43, 128, 255);
+            fill-opacity: 0;
+        }
+
+        @keyframes v-2 {
+            0% {
+                transform: translateY(-7em);
+                stroke-width: 8px;
+                stroke-dashoffset: 500px;
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            70% {
+                fill-opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+                fill-opacity: 1;
+                stroke-width: 0px;
+                transform: translateY(0em);
+            }
+        }
+
+    }
+}

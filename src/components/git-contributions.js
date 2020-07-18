@@ -4,8 +4,6 @@ import moment from 'moment'
 import { fetchContributions } from '../services/github-api';
 import '../assets/scss/contributions.scss'
 
-
-
 const chartData = ({ labels, data }) => ({
     labels,
     datasets: [{

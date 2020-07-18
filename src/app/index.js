@@ -1,49 +1,85 @@
 import React, { useEffect } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import ReactTooltip from 'react-tooltip'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ReactTooltip from 'react-tooltip';
 import ReactGA from 'react-ga';
 
-import '../assets/scss/app.scss'
-import '../assets/scss/page.scss'
-import { Homepage, Connect, Code, About } from '../pages'
-import { Header } from '../components'
+import '../assets/scss/app.scss';
+import '../assets/scss/page.scss';
+import { Homepage, Connect, Code, About, Intro } from '../pages';
+import { Header } from '../components';
 
 const pages = [
-  { link: '/home', label: "Intro", className: "home", id: "home-id", PageComponent: Homepage, icon: '🏠' },
-  { link: '/code', label: "My Work", className: "code", id: "code-id", PageComponent: Code, icon: '👨‍💻' },
-  { link: '/me', label: "About Me", className: "about", id: "about-id", PageComponent: About, icon: '🙋‍♂️' },
-  { link: '/connect', label: "Connect", className: "connect", id: "connect-id", PageComponent: Connect, icon: '🤝' }
-]
+  {
+    link: '/intro',
+    label: 'Intro',
+    className: 'intro',
+    id: 'intro-id',
+    PageComponent: Intro,
+    icon: '☕️',
+  },
+  // {
+  //   link: '/home',
+  //   label: 'Home',
+  //   className: 'home',
+  //   id: 'home-id',
+  //   PageComponent: Homepage,
+  //   icon: '🏠',
+  // },
+  {
+    link: '/code',
+    label: 'My Work',
+    className: 'code',
+    id: 'code-id',
+    PageComponent: Code,
+    icon: '👨‍💻',
+  },
+  {
+    link: '/me',
+    label: 'About Me',
+    className: 'about',
+    id: 'about-id',
+    PageComponent: About,
+    icon: '🙋‍♂️',
+  },
+  {
+    link: '/connect',
+    label: 'Connect',
+    className: 'connect',
+    id: 'connect-id',
+    PageComponent: Connect,
+    icon: '🤝',
+  },
+];
 
-const renderPages = ({ PageComponent, ...pageProps }) => <PageComponent key={pageProps.id} {...pageProps} />
+const renderPages = ({ PageComponent, ...pageProps }) => (
+  <PageComponent key={pageProps.id} {...pageProps} />
+);
 
 export default () => {
   useEffect(() => {
     ReactGA.initialize('UA-160277350-1');
     ReactGA.pageview(window.location.pathname + window.location.search);
-  }, [])
-
+  }, []);
 
   return (
     <Router>
       <Header pages={pages} />
       <Switch>
-        <Route path="/">
-          {pages.map(renderPages)}
-        </Route>
+        <Route path="/">{pages.map(renderPages)}</Route>
 
         {/* {
         pages.map(({ PageComponent, link, ...pageProps }) => <Route exact path={link}><PageComponent {...pageProps} /></Route>)
       } */}
       </Switch>
       <ReactTooltip />
-      <ReactTooltip id='easterEgg' effect='solid' place="bottom" className="opaque">
-        <span style={{ fontSize: "100px" }}>🐣</span>
+      <ReactTooltip
+        id="easterEgg"
+        effect="solid"
+        place="bottom"
+        className="opaque"
+      >
+        <span style={{ fontSize: '100px' }}>🐣</span>
       </ReactTooltip>
     </Router>
-  )
-}
+  );
+};

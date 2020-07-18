@@ -4,10 +4,12 @@
 
 .hero {
     min-height: 100vh;
+
     p {
         font-size: 18px;
         font-weight: 600;
     }
+
     >section {
         color: white;
         display: flex;
@@ -17,6 +19,7 @@
         height: 100%;
         justify-content: space-between;
         flex-wrap: wrap;
+
         >img {
             display: block;
             padding: 1rem;
@@ -29,25 +32,36 @@
     &.mobile>section {
         justify-content: center;
     }
+
+    &.intro {
+        background-color: rgb(32, 35, 48);
+        overflow: hidden;
+    }
+
     &.home {
         background-attachment: fixed;
-        background-image: linear-gradient(to top, #ffffff 0%, #00c6fb 30%, #005bea 100%); 
+        background-image: linear-gradient(to top, #ffffff 0%, #00c6fb 30%, #005bea 100%);
+
         /* background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
         >section {
             align-items: center;
+
             h1 {
                 margin-top: 0;
-                @media (max-width: 686px){
+
+                @media (max-width: 686px) {
                     margin-top: 2rem
                 }
             }
         }
     }
+
     &.code {
-        @media (max-width: 580px){
+        @media (max-width: 580px) {
             border-radius: 0;
         }
     }
+
     &.about {
         margin-top: -4rem;
         padding: 3rem 0;
@@ -60,18 +74,21 @@
         box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 25px 0px;
         overflow: visible;
         border-radius: 6px;
-        @media (max-width: 580px){
+
+        @media (max-width: 580px) {
             margin: 3rem auto;
         }
     }
+
     &.about {
         >section {
-            .text-area { 
+            .text-area {
                 flex: 1;
                 display: flex;
                 flex-direction: column;
                 min-width: 320px;
             }
+
             img {
                 min-width: unset;
                 max-width: 90%;
@@ -79,11 +96,13 @@
             }
         }
     }
+
     &.connect {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
         .shadow-box a>img {
             width: 4rem;
         }
@@ -102,9 +121,11 @@ section {
 #home-id {
     section {
         justify-content: center;
+
         .image-container {
             min-width: 320px;
             max-width: 50%;
+
             img {
                 width: 100%;
             }
