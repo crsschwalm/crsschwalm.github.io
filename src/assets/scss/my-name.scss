@@ -15,6 +15,11 @@ svg#my-name {
     animation: fade-left 2s ease forwards 2.5s;
     z-index: 1;
 
+    @media (max-width: 580px) {
+        animation: fade-up 2s ease forwards 2.5s;
+    }
+
+
     >path {
         &:nth-child(2) {
             stroke-dasharray: 276.64154052734375;
@@ -118,9 +123,19 @@ svg#my-name {
 
 @keyframes fade-in-from-right {
     to {
-        right: 0;
+        right: 100px;
         transform: unset;
         bottom: 0;
+    }
+}
+
+
+
+
+@keyframes fade-up {
+    to {
+        top: 15%;
+        transform: translate(-50%, 0);
     }
 }
 

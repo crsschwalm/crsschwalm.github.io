@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -33,17 +34,20 @@ a {
     text-decoration: none;
     transition: transform 0.1s ease 0s, background-color, border-color;
     padding: 13px 24px 12px;
-    border: 1px solid  #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 3px;
     color: #ffffff;
     background: transparent;
+
     &:hover {
       color: #536171;
       background: white;
     }
+
     &.offset {
       color: #536171;
       border-color: #536171;
+
       &:hover {
         color: #ffffff;
         background: #536171;
@@ -55,6 +59,7 @@ a {
 #easterEgg.opaque.show {
   background-color: transparent;
   opacity: .75;
+
   &:after {
     display: none;
   }

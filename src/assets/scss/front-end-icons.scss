@@ -31,6 +31,10 @@
     }
 
     .list-services li {
+        @media (max-width: 580px) {
+            padding: 0
+        }
+
         padding: 0 2em;
     }
 
