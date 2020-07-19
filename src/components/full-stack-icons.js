@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import '../assets/scss/front-end-icons.scss';
+import '../assets/scss/full-stack-icons.scss';
 import StackSlide from './stack-slide';
 import { useScrollPosition } from '../services/use-scroll-position';
 
-export const AnimatedIcons = () => {
+export const FullStackIcons = () => {
   const [show, setShow] = useState(false);
 
   useScrollPosition(
@@ -16,7 +16,7 @@ export const AnimatedIcons = () => {
 
   return (
     <article className="content services animated-icons">
-      <h2>Full Stack</h2>
+      <h2>Full Stack Engineer</h2>
       <ul className="list-services">
         <li>
           <figure className={show ? 'show' : 'hide'}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useIsMobile } from '../services';
 import { MyName } from '../components/my-name';
-import { AnimatedIcons } from '../components/front-end-icons';
+import { FullStackIcons } from '../components/full-stack-icons';
 
 export const Intro = ({ className, id }) => {
   return (
@@ -12,7 +12,7 @@ export const Intro = ({ className, id }) => {
         </section>
       </div>
 
-      <AnimatedIcons />
+      <FullStackIcons />
     </div>
   );
 };
