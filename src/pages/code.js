@@ -39,7 +39,17 @@ export const Code = ({ className, id }) => {
           <span style={{ textDecoration: 'underline' }}>{projectCount}</span>{' '}
           projects in the last 12 months!
         </h2>
+
         <ProjectTicker />
+
+        <em className="disclaimer">
+          Many projects I work on are managed in private repos and orgs. Some
+          clients prefer a GitHub account be created in their domain. These
+          projects won't show up here{' '}
+          <span role="img" aria-label="expressionless">
+            😐
+          </span>
+        </em>
       </div>
     </div>
   );
