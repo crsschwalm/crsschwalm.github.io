@@ -16,6 +16,10 @@ export const Code = ({ className, id }) => {
   }, []);
   return (
     <div id={id}>
+      <div className="code-in-action">
+        <h1>Projects out on the Web</h1>
+        <Projects />
+      </div>
       <div className={`${className} hero`}>
         <span
           aria-label="easter egg"
@@ -26,51 +30,16 @@ export const Code = ({ className, id }) => {
         >
           👨‍💻
         </span>
-        <h1>I Build Things</h1>
+        <h1>Quick Stats</h1>
 
         <GitContributions />
 
-        <h2>{projectCount} Projects in the last 12 months!</h2>
+        <h2>
+          I have worked on{' '}
+          <span style={{ textDecoration: 'underline' }}>{projectCount}</span>{' '}
+          projects in the last 12 months!
+        </h2>
         <ProjectTicker />
-        <section className="this-site">
-          <div>
-            <h4>This Site</h4>
-            <ul>
-              <li>
-                <strong>React</strong> on <strong>Github Pages</strong>
-              </li>
-              <li>
-                <strong>Node</strong> on <strong>AWS Lambda</strong>
-              </li>
-              <li>
-                Github <strong>GraphQL API</strong>
-              </li>
-              <li>
-                <strong>Iterative releases</strong>
-              </li>
-              <hr></hr>
-              <li>
-                <a href="https://github.com/crsschwalm/crsschwalm.github.io">
-                  Check out the source code
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/crsschwalm/portfolio-api">
-                  and the API
-                </a>
-              </li>
-              <li>
-                <a href="https://codepen.io/crsschwalm/pen/eYNGZra">
-                  Code Pen Playground
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
-      <div className="code-in-action">
-        <h1>Code In Action!</h1>
-        <Projects />
       </div>
     </div>
   );

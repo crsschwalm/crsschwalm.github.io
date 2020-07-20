@@ -4,6 +4,7 @@ import ltgImage from '../assets/images/projects/ltg.png';
 import blogImage from '../assets/images/projects/blog.ltg.png';
 import lillyImage from '../assets/images/projects/lilly.png';
 import vinylTapImage from '../assets/images/projects/vinyl-tap.png';
+import portfolioImage from '../assets/images/projects/portfolio.png';
 
 export const Projects = () => {
   const projects = [
@@ -45,6 +46,16 @@ export const Projects = () => {
       niceLink: 'Vinyl Tap',
       imageUrl: vinylTapImage,
       link: 'https://master.d7nd22pvtnx2g.amplifyapp.com/',
+    },
+    {
+      name: 'Portfolio',
+      description:
+        'Welp, here it is! Just having fun adding in things on the weekend.',
+      devFrontend: `React, custom SCSS`,
+      devBackend: `Node on AWS Lambda`,
+      link: 'https://github.com/crsschwalm/crsschwalm.github.io',
+      niceLink: 'Source Code',
+      imageUrl: portfolioImage,
     },
   ];
   return (
