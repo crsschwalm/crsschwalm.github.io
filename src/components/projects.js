@@ -50,7 +50,7 @@ export const Projects = () => {
     {
       name: 'Portfolio',
       description:
-        'Welp, here it is! Just having fun adding in things on the weekend.',
+        "The site we're on! A playground to show some of the work I do.",
       devFrontend: `React, custom SCSS`,
       devBackend: `Node on AWS Lambda`,
       link: 'https://github.com/crsschwalm/crsschwalm.github.io',
