@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.8aaa8eaf.chunk.css",
-    "main.js": "/static/js/main.d7e50dfc.chunk.js",
-    "main.js.map": "/static/js/main.d7e50dfc.chunk.js.map",
+    "main.css": "/static/css/main.44509fc2.chunk.css",
+    "main.js": "/static/js/main.9d988085.chunk.js",
+    "main.js.map": "/static/js/main.9d988085.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
     "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
-    "static/js/2.00627ffd.chunk.js": "/static/js/2.00627ffd.chunk.js",
-    "static/js/2.00627ffd.chunk.js.map": "/static/js/2.00627ffd.chunk.js.map",
+    "static/js/2.e86d4214.chunk.js": "/static/js/2.e86d4214.chunk.js",
+    "static/js/2.e86d4214.chunk.js.map": "/static/js/2.e86d4214.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.279219b74c6f4d815911cebb683b4b24.js": "/precache-manifest.279219b74c6f4d815911cebb683b4b24.js",
+    "precache-manifest.71daa9c089cb517afb2e0852b2e03ce8.js": "/precache-manifest.71daa9c089cb517afb2e0852b2e03ce8.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.8aaa8eaf.chunk.css.map": "/static/css/main.8aaa8eaf.chunk.css.map",
-    "static/js/2.00627ffd.chunk.js.LICENSE.txt": "/static/js/2.00627ffd.chunk.js.LICENSE.txt",
+    "static/css/main.44509fc2.chunk.css.map": "/static/css/main.44509fc2.chunk.css.map",
+    "static/js/2.e86d4214.chunk.js.LICENSE.txt": "/static/js/2.e86d4214.chunk.js.LICENSE.txt",
     "static/media/Carson_Schwalm_Resume.pdf": "/static/media/Carson_Schwalm_Resume.a45d8118.pdf",
     "static/media/blog.ltg.png": "/static/media/blog.ltg.61479438.png",
     "static/media/carson_floating.png": "/static/media/carson_floating.27e1e43b.png",
@@ -20,14 +20,15 @@
     "static/media/ltg.png": "/static/media/ltg.14da53b9.png",
     "static/media/me-nana.jpg": "/static/media/me-nana.96a32c4e.jpg",
     "static/media/note-taking.jpg": "/static/media/note-taking.be1d78f0.jpg",
+    "static/media/portfolio.png": "/static/media/portfolio.2e3d6518.png",
     "static/media/schwalm-thumb.jpg": "/static/media/schwalm-thumb.62616a8d.jpg",
     "static/media/sm_phone.png": "/static/media/sm_phone.d6bc9332.png",
     "static/media/vinyl-tap.png": "/static/media/vinyl-tap.37b181f6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c2b20a0b.js",
-    "static/js/2.00627ffd.chunk.js",
-    "static/css/main.8aaa8eaf.chunk.css",
-    "static/js/main.d7e50dfc.chunk.js"
+    "static/js/2.e86d4214.chunk.js",
+    "static/css/main.44509fc2.chunk.css",
+    "static/js/main.9d988085.chunk.js"
   ]
 }
