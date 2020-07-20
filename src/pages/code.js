@@ -17,7 +17,13 @@ export const Code = ({ className, id }) => {
   return (
     <div id={id}>
       <div className={`${className} hero`}>
-        <span data-tip data-for="easterEgg" className="section-icon">
+        <span
+          aria-label="easter egg"
+          data-tip
+          data-for="easterEgg"
+          role="img"
+          className="section-icon"
+        >
           👨‍💻
         </span>
         <h1>I Build Things</h1>

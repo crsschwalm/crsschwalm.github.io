@@ -7,7 +7,11 @@ const seperators = ['👨‍💻', '☕️', '💻', '🦔', '🚢', '🚀'];
 const ProjectItem = ({ index, projectName }) => (
   <span key={index}>
     {projectName}
-    <span role="img" style={{ padding: '0 1rem' }}>
+    <span
+      aria-label="project-seperator"
+      role="img"
+      style={{ padding: '0 1rem' }}
+    >
       {seperators[index % seperators.length]}
     </span>
   </span>
@@ -26,7 +30,9 @@ const GetProjectsFromAPI = () => {
 
   return projects ? (
     <p style={{ whiteSpace: 'nowrap' }}>
-      🚀{' '}
+      <span role="img" aria-label="rocket ship">
+        🚀
+      </span>{' '}
       {projects.map((p, i) => (
         <ProjectItem key={i} projectName={p} index={i} />
       ))}

@@ -48,23 +48,24 @@ export const Projects = () => {
     },
   ];
   return (
-    <ul class="cards">
+    <ul className="cards">
       {projects.map((proj, i) => (
-        <li class="cards__item" key={i}>
-          <div class="card">
+        <li className="cards__item" key={i}>
+          <div className="card">
             <div
-              class="card__image"
+              className="card__image"
               style={{ backgroundImage: `url(${proj.imageUrl})` }}
             ></div>
-            <div class="card__content">
-              <div class="card__title">{proj.name}</div>
-              <p class="card__text">{proj.description}</p>
-              <code class="card__text">{proj.devFrontend}</code>
-              <code class="card__text">{proj.devBackend}</code>
+            <div className="card__content">
+              <div className="card__title">{proj.name}</div>
+              <p className="card__text">{proj.description}</p>
+              <code className="card__text">{proj.devFrontend}</code>
+              <code className="card__text">{proj.devBackend}</code>
               <a
                 className="link-button offset"
                 href={proj.link}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {proj.niceLink}
               </a>

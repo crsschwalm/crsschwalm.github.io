@@ -5,7 +5,7 @@ import ReactGA from 'react-ga';
 
 import '../assets/scss/app.scss';
 import '../assets/scss/page.scss';
-import { Homepage, Connect, Code, About, Intro } from '../pages';
+import { Connect, Code, About, Intro } from '../pages';
 import { Header } from '../components';
 
 const pages = [
@@ -78,7 +78,9 @@ export default () => {
         place="bottom"
         className="opaque"
       >
-        <span style={{ fontSize: '100px' }}>🐣</span>
+        <span style={{ fontSize: '100px' }} role="img">
+          🐣
+        </span>
       </ReactTooltip>
     </Router>
   );

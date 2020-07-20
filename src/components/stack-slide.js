@@ -5,8 +5,6 @@ import npm from '../assets/images/npm.png';
 import node from '../assets/images/node.png';
 import sass from '../assets/images/sass.png';
 import heroku from '../assets/images/heroku.png';
-import react from '../assets/images/react.png';
-import vue from '../assets/images/vue.png';
 import typescript from '../assets/images/typescript.png';
 import javascript from '../assets/images/javascript.png';
 import html5 from '../assets/images/html5.png';
@@ -18,6 +16,8 @@ import elastic from '../assets/images/elastic.png';
 import graphql from '../assets/images/graphql.png';
 import aws from '../assets/images/aws.png';
 import slack from '../assets/images/slack.png';
+// import react from '../assets/images/react.png';
+// import vue from '../assets/images/vue.png';
 
 export default () => (
   <section>
