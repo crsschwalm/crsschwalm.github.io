@@ -1,7 +1,6 @@
 import React from 'react';
 import { useIsMobile } from '../services';
-import { MyName } from '../components/my-name';
-import { FullStackIcons } from '../components/full-stack-icons';
+import { FullStackIcons, MyName } from '../components';
 
 export const Intro = ({ className, id }) => {
   return (

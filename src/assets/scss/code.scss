@@ -4,65 +4,83 @@
     background-attachment: fixed;
     padding: 2rem 0 5rem 0;
     overflow: hidden;
-}
 
-.code {
-    &.hero {
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.6);
-        max-width: 1024px;
-        min-width: 90%;
-        margin: auto;
-        justify-content: center;
-        color: white;
-        position: relative;
-        /* background-image: linear-gradient(to top, #ffffff 0%, rgb(232, 232, 232) 20%, rgb(232, 232, 232) 70%, #ffffff 100%);  */
-        /* background-image: linear-gradient( -75deg,#23afba 0%,#298dbf 50%, grey 100% ); */
-    }
-    ul {
-        li {
-            a {
-                color: lightblue;
-                &:visited {
-                    color: lightgrey;
-                    text-decoration: none;
+
+    .code {
+        &.hero {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.6);
+            max-width: 1024px;
+            min-width: 90%;
+            margin: auto;
+            justify-content: center;
+            color: white;
+            position: relative;
+            /* background-image: linear-gradient(to top, #ffffff 0%, rgb(232, 232, 232) 20%, rgb(232, 232, 232) 70%, #ffffff 100%);  */
+            /* background-image: linear-gradient( -75deg,#23afba 0%,#298dbf 50%, grey 100% ); */
+        }
+
+        ul {
+            li {
+                a {
+                    color: lightblue;
+
+                    &:visited {
+                        color: lightgrey;
+                        text-decoration: none;
+                    }
                 }
             }
         }
-    }
-    .section-icon {
-        &:hover {
-            cursor: grab;
-        }
-        position: absolute;
-        top: -1.5rem;
-        padding: 1rem 1.3rem;
-        background-color: black;
-        font-size: 2rem;
-        border-radius: 4rem;
-        right: -1.5rem;
-    }
 
-    .this-site {
-        h4 {
-            text-align: center;
-            font-size: 24px;
-            text-decoration: underline;
+        .section-icon {
+            &:hover {
+                cursor: grab;
+            }
+
+            position: absolute;
+            top: -1.5rem;
+            padding: 1rem 1.3rem;
+            background-color: black;
+            font-size: 2rem;
+            border-radius: 4rem;
+            right: -1.5rem;
         }
-        ul {
-            list-style: none;
-            text-align: center;
-            padding: 0;
-            li {
-                padding-bottom: .5rem;
+
+        .this-site {
+            h4 {
+                text-align: center;
+                font-size: 24px;
+                text-decoration: underline;
+            }
+
+            ul {
+                list-style: none;
+                text-align: center;
+                padding: 0;
+
+                li {
+                    padding-bottom: .5rem;
+                }
             }
         }
+
+        h1,
+        h2 {
+            text-align: center;
+            width: 100%;
+            padding: 2rem 0;
+        }
+
+
     }
 
-    h1, h2 {
-        text-align: center;
-        width: 100%; 
-        padding: 2rem 0;
+    .code-in-action {
+        h1 {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+        }
     }
 }
