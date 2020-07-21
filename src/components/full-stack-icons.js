@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../assets/scss/full-stack-icons.scss';
-import StackSlide from './stack-slide';
 import { useScrollPosition } from '../services/use-scroll-position';
 
 export const FullStackIcons = () => {
@@ -124,7 +123,6 @@ c39.8-31.6, 75.2-41.2, 99.9-27s34.1, 49.7, 26.5, 100c-7, 47.1-28.1, 102.8-59.2, 
           </figure>
         </li>
       </ul>
-      <StackSlide />
     </article>
   );
 };

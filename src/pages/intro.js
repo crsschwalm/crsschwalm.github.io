@@ -1,6 +1,6 @@
 import React from 'react';
+import { MyName } from '../components';
 import { useIsMobile } from '../services';
-import { FullStackIcons, MyName } from '../components';
 
 export const Intro = ({ className, id }) => {
   return (
@@ -10,8 +10,6 @@ export const Intro = ({ className, id }) => {
           <MyName />
         </section>
       </div>
-
-      <FullStackIcons />
     </div>
   );
 };

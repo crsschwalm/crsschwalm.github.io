@@ -16,67 +16,66 @@ export const Connect = ({ className, id }) => (
           🤝
         </span>
       </h1>
-      <section style={{ width: '100%', margin: 0, padding: 0 }}>
+
+      <div
+        className="shadow-box"
+        style={{
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
         <div
-          className="shadow-box"
           style={{
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'space-evenly',
+            padding: '2rem 0 1rem 0',
           }}
         >
-          <div
-            style={{
-              width: '100%',
-              display: 'flex',
-              justifyContent: 'space-evenly',
-              padding: '2rem 0 1rem 0',
-            }}
+          <a
+            data-tip="Resume"
+            alt="Resume"
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <a
-              data-tip="Resume"
-              alt="Resume"
-              href={resume}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img data-tip="Resume" alt="Resume" src={resumeIcon} />
-            </a>
-            <a
-              data-tip="LinkedIn"
-              alt="LinkedIn"
-              href={'https://www.linkedin.com/in/carsonschwalm/'}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img alt="linkedin" src={linkedin} />
-            </a>
-            <a
-              data-tip="GitHub"
-              alt="GitHub"
-              href={'https://github.com/crsschwalm'}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img alt="github" src={github} />
-            </a>
-            <a
-              data-tip="crsschwalm@gmail.com"
-              alt="Email: crsschwalm@gmail.com"
-              href="mailto:crsschwalm@gmail.com?subject=I noticed your portfolio Site"
-            >
-              <img alt="email" src={email} />
-            </a>
-            <a
-              data-tip="(317) 438-0924"
-              alt="Phone: (317) 438-0924"
-              href="tel:317-438-0924"
-            >
-              <img alt="phone" src={phone} />
-            </a>
-          </div>
+            <img data-tip="Resume" alt="Resume" src={resumeIcon} />
+          </a>
+          <a
+            data-tip="LinkedIn"
+            alt="LinkedIn"
+            href={'https://www.linkedin.com/in/carsonschwalm/'}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img alt="linkedin" src={linkedin} />
+          </a>
+          <a
+            data-tip="GitHub"
+            alt="GitHub"
+            href={'https://github.com/crsschwalm'}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img alt="github" src={github} />
+          </a>
+          <a
+            data-tip="crsschwalm@gmail.com"
+            alt="Email: crsschwalm@gmail.com"
+            href="mailto:crsschwalm@gmail.com?subject=I noticed your portfolio Site"
+          >
+            <img alt="email" src={email} />
+          </a>
+          <a
+            data-tip="(317) 438-0924"
+            alt="Phone: (317) 438-0924"
+            href="tel:317-438-0924"
+          >
+            <img alt="phone" src={phone} />
+          </a>
         </div>
-      </section>
+      </div>
     </div>
   </div>
 );

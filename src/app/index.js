@@ -5,7 +5,7 @@ import ReactGA from 'react-ga';
 
 import '../assets/scss/app.scss';
 import '../assets/scss/page.scss';
-import { Connect, Code, About, Intro } from '../pages';
+import { Connect, Code, Intro, Stack } from '../pages';
 import { Header } from '../components';
 
 const pages = [
@@ -17,14 +17,14 @@ const pages = [
     PageComponent: Intro,
     icon: '☕️',
   },
-  // {
-  //   link: '/home',
-  //   label: 'Home',
-  //   className: 'home',
-  //   id: 'home-id',
-  //   PageComponent: Homepage,
-  //   icon: '🏠',
-  // },
+  {
+    link: '/stack',
+    label: 'Dev Stack',
+    className: 'stack',
+    id: 'stack-id',
+    PageComponent: Stack,
+    icon: '🥞',
+  },
   {
     link: '/code',
     label: 'My Work',
@@ -32,14 +32,6 @@ const pages = [
     id: 'code-id',
     PageComponent: Code,
     icon: '👨‍💻',
-  },
-  {
-    link: '/me',
-    label: 'About Me',
-    className: 'about',
-    id: 'about-id',
-    PageComponent: About,
-    icon: '🙋‍♂️',
   },
   {
     link: '/connect',
@@ -66,10 +58,6 @@ export default () => {
       <Header pages={pages} />
       <Switch>
         <Route path="/">{pages.map(renderPages)}</Route>
-
-        {/* {
-        pages.map(({ PageComponent, link, ...pageProps }) => <Route exact path={link}><PageComponent {...pageProps} /></Route>)
-      } */}
       </Switch>
       <ReactTooltip />
       <ReactTooltip
